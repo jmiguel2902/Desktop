@@ -1,0 +1,822 @@
+2015-09-03 19:38:04.4889|WARN|thread: 1|StandardUserErrors|Showing user error Failed to create a new commit.
+System.ArgumentNullException: Failed Null Check on 'commitModel'
+Parameter name: commitModel
+   at GitHub.Helpers.Ensure.ArgumentNotNull(Object value, String name)
+   at GitHub.ViewModels.CommitViewModel..ctor(IRepositoryModel repository, ICommitModel commitModel, ICommittedFileForklift committedFileForklift, IAvatarProvider avatarProvider, IInlineTextProvider inlineTextProvider)
+   at GitHub.Helpers.CommitCreator.<>c__DisplayClass2.<CreateCommit>b__1(<>f__AnonymousType0`2 x)
+   at System.Reactive.Linq.ObservableImpl.Select`2._.OnNext(TSource value)
+2015-09-03 19:29:05.2401|INFO|thread: 1|CommandLineHandler|Parsing command line arguments:C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4\GitHub.exe
+2015-09-03 19:29:05.2870|INFO|thread: 1|AppInstanceCommunicator|Starting up as master instance of GitHub Desktop
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| #########################################
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| GitHub Desktop started. VERSION: 3.0.4.0
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| Build version: 116bf8fa8f569474f121d560a5de704b96312a36
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| ***************************************
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| ***                                 ***
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| ***                                 ***
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| ***        Have a problem?          ***
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| ***    Email support@github.com     ***
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| ***      and include this file      ***
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| ***                                 ***
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| ***                                 ***
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| ***************************************
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| OS Version: Windows NT 6.3.9600.0 amd64
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| CLR Version: 4.0.30319.42000
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| Current culture: en-PH
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| Terminal Services session: no
+2015-09-03 19:29:05.3026|INFO|thread: 4|StartupLogging| Location: C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4\GitHub.exe
+2015-09-03 19:29:05.3183|INFO|thread: 4|StartupLogging| ActivationUri: https://github-windows.s3.amazonaws.com/GitHub.application
+2015-09-03 19:29:05.4276|INFO|thread: 1|HardwareRenderingHelper|Your video card appears to support hardware rendering. If this isn't the case and you see glitches
+2015-09-03 19:29:05.4276|INFO|thread: 1|HardwareRenderingHelper|set the GH_FORCE_SW_RENDERING environment variable to 1
+2015-09-03 19:29:05.5058|INFO|thread: 4|GitEnvironment|Process set up with this SSH Agent info: (null):(null)
+2015-09-03 19:29:05.5058|INFO|thread: 4|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft\Web Platform Installer\
+2015-09-03 19:29:05.5214|INFO|thread: 4|StartupLogging| =====================================================
+2015-09-03 19:29:05.5214|INFO|thread: 4|StartupLogging|  DIAGNOSTICS                                        |
+2015-09-03 19:29:05.5214|INFO|thread: 4|StartupLogging| =====================================================
+2015-09-03 19:29:05.5527|INFO|thread: 4|StartupLogging| Git Extracted: 'True:
+2015-09-03 19:29:05.5527|INFO|thread: 4|StartupLogging| PortableGit Dir Exists: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad'
+2015-09-03 19:29:05.5995|INFO|thread: 4|StartupLogging| Git Executable Exists: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe'
+2015-09-03 19:29:05.5995|INFO|thread: 4|StartupLogging| ----------------------------------------------------
+2015-09-03 19:29:05.5995|INFO|thread: 4|StartupLogging| PATH: C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft\Web Platform Installer\
+2015-09-03 19:29:05.6152|INFO|thread: 4|StartupLogger|Proxy information: (None)
+2015-09-03 19:29:05.6152|INFO|thread: 4|StartupLogger|Couldn't fetch creds for proxy
+2015-09-03 19:29:06.2402|INFO|thread: 1|App|Checking whether application is network deployed.
+2015-09-03 19:29:06.7871|INFO|thread: 5|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4\7za.exe', Args: 'x -y "-oC:\Users\Gudo\AppData\Local\GitHub\xilfvm1q.ezp.deleteme" "C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4\tutorial.7z"', Working Directory: 
+2015-09-03 19:29:06.9902|INFO|thread: 5|PortablePackageManager|Extracting tutorial.7z is (so far) successful
+2015-09-03 19:29:08.5216|INFO|thread: 5|PortablePackageManager|Extracted package successfully: tutorial.7z
+2015-09-03 19:29:10.8654|INFO|thread: 1|ClickOnceAppIconHelper|Updating registry with our application icon 'C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4\Images\App.ico'
+2015-09-03 19:29:21.1628|INFO|thread:14|SoftwareUpdateViewModel|Checking for new version
+2015-09-03 19:29:28.9288|INFO|thread:15|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 1:RepositoryModel.cs:1499
+2015-09-03 19:29:28.9913|INFO|thread:14|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 1:RepositoryModel.cs:1499 after waiting 0.06959s
+2015-09-03 19:29:29.0225|INFO|thread:15|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 2:RepositoryModel.cs:1499
+2015-09-03 19:29:29.0694|INFO|thread:15|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 2:RepositoryModel.cs:1499 after waiting 0.0532105s
+2015-09-03 19:29:30.8195|INFO|thread:15|AsyncReaderWriterLock|Released concurrent scheduler for operation: 2:RepositoryModel.cs:1499 after blocking 1.7439929s
+2015-09-03 19:29:30.8195|INFO|thread:17|AsyncReaderWriterLock|Released concurrent scheduler for operation: 1:RepositoryModel.cs:1499 after blocking 1.8222814s
+2015-09-03 19:29:32.7415|INFO|thread: 1|CommandLineToolsExtractor|Portable Git and Git LFS are already extracted
+2015-09-03 19:29:32.7727|INFO|thread: 1|GitClient|Installing git lfs filters
+2015-09-03 19:29:32.7883|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: (null):(null)
+2015-09-03 19:29:32.7883|INFO|thread: 1|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:29:32.7883|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'lfs init --force ', Working Directory: C:\WINDOWS\TEMP\
+2015-09-03 19:29:33.0384|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.ShellViewModel.
+2015-09-03 19:29:33.0384|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.DashboardViewModel.
+2015-09-03 19:29:55.7406|INFO|thread: 1|PortablePackageManager|Already extracted gitignore.7z, returning 100%
+2015-09-03 19:29:58.9908|WARN|thread:18|LoginCache|Could not get login for host 'GitHub.HostAddress'
+System.Collections.Generic.KeyNotFoundException: The given key 'login:null' was not present in the cache.
+2015-09-03 19:30:00.0690|INFO|thread:16|DashboardViewModel|Selected repository '/Tutorial'
+2015-09-03 19:30:00.1002|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 3:GitClient.cs:653
+2015-09-03 19:30:00.1002|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 3:GitClient.cs:653 after waiting 0.0015666s
+2015-09-03 19:30:00.1002|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 4:GitClient.cs:631
+2015-09-03 19:30:00.1002|INFO|thread:15|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 4:GitClient.cs:631 after waiting 0.0002294s
+2015-09-03 19:30:00.1315|INFO|thread:17|AsyncReaderWriterLock|Released concurrent scheduler for operation: 3:GitClient.cs:653 after blocking 0.0238607s
+2015-09-03 19:30:01.8190|INFO|thread:18|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 5:GitClient.cs:648
+2015-09-03 19:30:01.8190|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 5:GitClient.cs:648 after waiting 0.0001183s
+2015-09-03 19:30:01.8816|INFO|thread:17|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 6:RepositoryViewModel.cs:321
+2015-09-03 19:30:01.8972|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 6:RepositoryViewModel.cs:321 after waiting 0.0043757s
+2015-09-03 19:30:01.8972|INFO|thread:17|AsyncReaderWriterLock|Released concurrent scheduler for operation: 5:GitClient.cs:648 after blocking 0.069418s
+2015-09-03 19:30:02.0847|INFO|thread:18|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 7:GitClient.cs:221
+2015-09-03 19:30:02.0847|INFO|thread:18|DashboardViewModel|Took 1992ms to Create RepositoryViewModel for location C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo
+2015-09-03 19:30:02.0847|INFO|thread:15|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 7:GitClient.cs:221 after waiting 0.002634s
+2015-09-03 19:30:02.0847|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 4:GitClient.cs:631 after blocking 1.9866191s
+2015-09-03 19:30:02.1003|INFO|thread:18|GitClient|Loading commits for repo: C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo
+2015-09-03 19:30:02.2097|INFO|thread:18|ConcurrentRepositoryConnection|Loaded '1' commits for repo: C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo\.
+2015-09-03 19:30:02.2566|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 7:GitClient.cs:221 after blocking 0.1646154s
+2015-09-03 19:30:02.2722|INFO|thread:17|AsyncReaderWriterLock|Released concurrent scheduler for operation: 6:RepositoryViewModel.cs:321 after blocking 0.3829648s
+2015-09-03 19:30:03.4441|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 8:GitClient.cs:198
+2015-09-03 19:30:03.4598|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 8:GitClient.cs:198 after waiting 0.0001895s
+2015-09-03 19:30:03.4598|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 9:RepositoryModel.cs:596
+2015-09-03 19:30:03.4598|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 9:RepositoryModel.cs:596 after waiting 0.002221s
+2015-09-03 19:30:03.5223|INFO|thread:15|AsyncReaderWriterLock|Released concurrent scheduler for operation: 8:GitClient.cs:198 after blocking 0.0690551s
+2015-09-03 19:30:03.5379|INFO|thread:17|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 10:RepositoryModel.cs:596
+2015-09-03 19:30:03.5379|INFO|thread: 5|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 11:GitClient.cs:287
+2015-09-03 19:30:03.5535|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 9:RepositoryModel.cs:596 after blocking 0.1038964s
+2015-09-03 19:30:03.5535|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 10:RepositoryModel.cs:596 after waiting 0.0239857s
+2015-09-03 19:30:03.5691|INFO|thread:15|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 11:GitClient.cs:287 after waiting 0.017646s
+2015-09-03 19:30:03.5691|INFO|thread: 5|GitEnvironment|Process set up with this SSH Agent info: (null):(null)
+2015-09-03 19:30:03.5691|INFO|thread: 5|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:30:03.5691|INFO|thread: 5|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo\
+2015-09-03 19:30:03.6316|INFO|thread:17|AsyncReaderWriterLock|Released concurrent scheduler for operation: 10:RepositoryModel.cs:596 after blocking 0.0710661s
+2015-09-03 19:30:03.7410|INFO|thread: 5|ConcurrentRepositoryConnection|Took 157ms to git status
+2015-09-03 19:30:03.7410|INFO|thread: 5|ConcurrentRepositoryConnection|Took 159ms to git status and parse output
+2015-09-03 19:30:04.4819|INFO|thread: 5|NewCommitViewModel|Took 941ms to load files for C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo
+2015-09-03 19:30:04.4819|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 11:GitClient.cs:287 after blocking 0.9237333s
+2015-09-03 19:30:09.7946|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 12:GitClient.cs:636
+2015-09-03 19:30:09.7946|INFO|thread:17|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 12:GitClient.cs:636 after waiting 3.07E-05s
+2015-09-03 19:30:09.7946|INFO|thread:15|AsyncReaderWriterLock|Released concurrent scheduler for operation: 12:GitClient.cs:636 after blocking 0.003324s
+2015-09-03 19:30:10.6072|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 13:BranchesViewModel.cs:543
+2015-09-03 19:30:10.6072|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 13:BranchesViewModel.cs:543 after waiting 7.84E-05s
+2015-09-03 19:30:10.6072|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 14:RepositoryViewModel.cs:321
+2015-09-03 19:30:10.6072|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 14:RepositoryViewModel.cs:321 after waiting 3.5E-05s
+2015-09-03 19:30:10.6228|INFO|thread:17|AsyncReaderWriterLock|Released concurrent scheduler for operation: 13:BranchesViewModel.cs:543 after blocking 0.0241662s
+2015-09-03 19:30:10.6540|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 15:BranchSynchronizer.cs:126
+2015-09-03 19:30:10.7009|INFO|thread:17|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 15:BranchSynchronizer.cs:126 after waiting 0.0582667s
+2015-09-03 19:30:10.7322|INFO|thread:18|ConcurrentRepositoryConnection|branch stats: remote not found for master
+2015-09-03 19:30:10.7478|INFO|thread: 1|NewCommitViewModel|Took 6265ms to render file list for C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo
+2015-09-03 19:30:10.7947|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 15:BranchSynchronizer.cs:126 after blocking 0.0842622s
+2015-09-03 19:30:10.9040|INFO|thread: 1|RepositoryHost|Log in from cache for login 'jmiguel2902' to host 'https://api.github.com/' SUCCEEDED
+2015-09-03 19:30:10.9509|INFO|thread: 1|AsyncReaderWriterLock|Released concurrent scheduler for operation: 14:RepositoryViewModel.cs:321 after blocking 0.3394234s
+2015-09-03 19:30:10.9509|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 16:RepositoryViewModel.cs:321
+2015-09-03 19:30:10.9509|INFO|thread:17|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 16:RepositoryViewModel.cs:321 after waiting 0.0012533s
+2015-09-03 19:30:10.9665|INFO|thread:14|AsyncReaderWriterLock|Released concurrent scheduler for operation: 16:RepositoryViewModel.cs:321 after blocking 0.0095182s
+2015-09-03 19:30:10.9978|INFO|thread:29|ApplicationShellInitializer|Running post login tasks. ~/.gitconfig is set up with user.name = 'jmiguel2902' and user.email = 'jmiguel2902@gmail.com'
+2015-09-03 19:30:11.1072|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 17:GitClient.cs:393
+2015-09-03 19:30:11.1072|INFO|thread:15|SSHProcessManager|Starting ssh-agent.exe
+2015-09-03 19:30:11.1072|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 18:GitClient.cs:393
+2015-09-03 19:30:11.1228|INFO|thread:15|PortablePackageManager|Already extracted PortableGit.7z, returning 100%
+2015-09-03 19:30:11.1384|INFO|thread:15|PortablePackageManager|Already extracted lfs-amd64.7z, returning 100%
+2015-09-03 19:30:11.1541|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 18:GitClient.cs:393 after waiting 0.0152837s
+2015-09-03 19:30:11.1228|INFO|thread:14|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 17:GitClient.cs:393 after waiting 0.010108s
+2015-09-03 19:30:11.1697|INFO|thread:14|GitEnvironment|Process set up with this SSH Agent info: (null):(null)
+2015-09-03 19:30:11.1697|INFO|thread:14|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:30:11.1697|INFO|thread:14|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --name-status 01ad9157cf120fc61d472c0fd66a58ce36b4df94 ', Working Directory: C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo\
+2015-09-03 19:30:11.1697|INFO|thread:14|GitEnvironment|Process set up with this SSH Agent info: (null):(null)
+2015-09-03 19:30:11.1697|INFO|thread:14|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:30:11.1697|INFO|thread:14|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --numstat 01ad9157cf120fc61d472c0fd66a58ce36b4df94 ', Working Directory: C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo\
+2015-09-03 19:30:11.9510|INFO|thread:29|GitEnvironment|Process set up with this SSH Agent info: (null):(null)
+2015-09-03 19:30:11.9510|INFO|thread:29|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:30:11.9510|INFO|thread:29|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --name-status 01ad9157cf120fc61d472c0fd66a58ce36b4df94 ', Working Directory: C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo\
+2015-09-03 19:30:11.9510|INFO|thread:29|GitEnvironment|Process set up with this SSH Agent info: (null):(null)
+2015-09-03 19:30:11.9510|INFO|thread:29|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:30:11.9510|INFO|thread:29|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --numstat 01ad9157cf120fc61d472c0fd66a58ce36b4df94 ', Working Directory: C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo\
+2015-09-03 19:30:12.6541|WARN|thread: 5|PullRequestViewModel|Error refreshing pull requests from server
+Octokit.NotFoundException: Not Found
+   at Octokit.Connection.HandleErrors(IResponse response)
+   at Octokit.Connection.<RunRequest>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Octokit.Connection.<Run>d__23`1.MoveNext()
+2015-09-03 19:30:12.8885|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 19:ICommittedFileForklift.cs:57
+2015-09-03 19:30:13.1941|INFO|thread: 5|BackgroundFetcher|Got a refresh period for C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo\.git of 300 seconds
+2015-09-03 19:30:13.1941|INFO|thread: 5|BackgroundFetcher|Added a delay for C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo\.git of 13327 milliseconds
+2015-09-03 19:30:13.3412|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 19:ICommittedFileForklift.cs:57 after waiting 0.2209707s
+2015-09-03 19:30:13.3632|INFO|thread:29|AsyncReaderWriterLock|Released concurrent scheduler for operation: 18:GitClient.cs:393 after blocking 2.2021492s
+2015-09-03 19:30:13.3632|INFO|thread: 1|NewPullRequestViewModel|No matching pull request found, clearing selection...
+2015-09-03 19:30:13.3632|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 20:RepositoryViewModel.cs:321
+2015-09-03 19:30:13.3712|INFO|thread:14|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 20:RepositoryViewModel.cs:321 after waiting 0.0048943s
+2015-09-03 19:30:13.3712|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 17:GitClient.cs:393 after blocking 2.2107769s
+2015-09-03 19:30:13.4042|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 19:ICommittedFileForklift.cs:57 after blocking 0.0633113s
+2015-09-03 19:30:13.4042|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 20:RepositoryViewModel.cs:321 after blocking 0.0425199s
+2015-09-03 19:30:13.5113|INFO|thread:30|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:30:13.5113|INFO|thread:30|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:30:13.5113|INFO|thread:30|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\ssh-add.exe', Args: '"C:\Users\Gudo\.ssh\github_rsa"', Working Directory: C:\WINDOWS\TEMP\
+2015-09-03 19:30:14.0159|INFO|thread:15|SSHKeyHelper|Found existing SSH key pair
+2015-09-03 19:30:17.0260|INFO|thread: 1|SelectedCommitViewModel|Took 5904ms to load files for commit 01ad915 in repo C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo
+2015-09-03 19:30:17.0260|INFO|thread: 1|SelectedCommitViewModel|Took 5916ms to load files for commit 01ad915 in repo C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo
+2015-09-03 19:31:28.3098|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 21:GitClient.cs:198
+2015-09-03 19:31:28.3098|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 22:RepositoryModel.cs:596
+2015-09-03 19:31:28.3098|INFO|thread:17|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 21:GitClient.cs:198 after waiting 0.0015889s
+2015-09-03 19:31:28.3411|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 21:GitClient.cs:198 after blocking 0.0236669s
+2015-09-03 19:31:28.3411|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 22:RepositoryModel.cs:596 after waiting 0.0250911s
+2015-09-03 19:31:28.3567|INFO|thread:17|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 23:GitClient.cs:287
+2015-09-03 19:31:28.3567|INFO|thread:17|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 24:BranchSynchronizer.cs:126
+2015-09-03 19:31:28.3567|INFO|thread:17|AsyncReaderWriterLock|Released concurrent scheduler for operation: 22:RepositoryModel.cs:596 after blocking 0.0132232s
+2015-09-03 19:31:28.3567|INFO|thread:17|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 23:GitClient.cs:287 after waiting 0.000917s
+2015-09-03 19:31:28.3567|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 24:BranchSynchronizer.cs:126 after waiting 0.0044017s
+2015-09-03 19:31:28.3567|INFO|thread:17|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:31:28.3567|INFO|thread:17|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:31:28.3567|INFO|thread:17|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo\
+2015-09-03 19:31:28.3723|INFO|thread:18|ConcurrentRepositoryConnection|branch stats: remote not found for master
+2015-09-03 19:31:28.3723|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 24:BranchSynchronizer.cs:126 after blocking 0.0099257s
+2015-09-03 19:31:28.4192|INFO|thread:18|ConcurrentRepositoryConnection|Took 49ms to git status
+2015-09-03 19:31:28.4192|INFO|thread:18|ConcurrentRepositoryConnection|Took 49ms to git status and parse output
+2015-09-03 19:31:29.4193|INFO|thread:18|NewCommitViewModel|Took 1070ms to load files for C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo
+2015-09-03 19:31:29.4193|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 23:GitClient.cs:287 after blocking 1.0700464s
+2015-09-03 19:31:29.4193|INFO|thread: 1|NewCommitViewModel|Took 1ms to render file list for C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo
+2015-09-03 19:31:29.4193|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 25:RepositoryViewModel.cs:321
+2015-09-03 19:31:29.4349|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 25:RepositoryViewModel.cs:321 after waiting 0.0029135s
+2015-09-03 19:31:29.4505|INFO|thread:17|AsyncReaderWriterLock|Released concurrent scheduler for operation: 25:RepositoryViewModel.cs:321 after blocking 0.0266215s
+2015-09-03 19:31:39.5135|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 26:GitClient.cs:198
+2015-09-03 19:31:39.5135|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 26:GitClient.cs:198 after waiting 3.13E-05s
+2015-09-03 19:31:39.5135|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 27:RepositoryModel.cs:596
+2015-09-03 19:31:39.5135|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 27:RepositoryModel.cs:596 after waiting 0.001202s
+2015-09-03 19:31:39.5291|INFO|thread:29|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 28:GitClient.cs:287
+2015-09-03 19:31:39.5291|INFO|thread:29|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 29:BranchSynchronizer.cs:126
+2015-09-03 19:31:39.5291|INFO|thread:29|AsyncReaderWriterLock|Released concurrent scheduler for operation: 27:RepositoryModel.cs:596 after blocking 0.0147422s
+2015-09-03 19:31:39.5291|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 28:GitClient.cs:287 after waiting 0.0008639s
+2015-09-03 19:31:39.5447|INFO|thread:15|AsyncReaderWriterLock|Released concurrent scheduler for operation: 26:GitClient.cs:198 after blocking 0.0246824s
+2015-09-03 19:31:39.5447|INFO|thread: 5|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:31:39.5447|INFO|thread: 5|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:31:39.5447|INFO|thread: 5|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo\
+2015-09-03 19:31:39.5447|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 29:BranchSynchronizer.cs:126 after waiting 0.0097337s
+2015-09-03 19:31:39.5447|INFO|thread:18|ConcurrentRepositoryConnection|branch stats: remote not found for master
+2015-09-03 19:31:39.5447|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 29:BranchSynchronizer.cs:126 after blocking 0.0057045s
+2015-09-03 19:31:39.5916|INFO|thread:15|ConcurrentRepositoryConnection|Took 43ms to git status
+2015-09-03 19:31:39.5916|INFO|thread:15|ConcurrentRepositoryConnection|Took 43ms to git status and parse output
+2015-09-03 19:31:39.5916|INFO|thread:15|NewCommitViewModel|Took 57ms to load files for C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo
+2015-09-03 19:31:39.5916|INFO|thread:15|AsyncReaderWriterLock|Released concurrent scheduler for operation: 28:GitClient.cs:287 after blocking 0.0564374s
+2015-09-03 19:31:39.5916|INFO|thread: 1|NewCommitViewModel|Took 0ms to render file list for C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo
+2015-09-03 19:31:39.5916|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 30:RepositoryViewModel.cs:321
+2015-09-03 19:31:39.5916|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 30:RepositoryViewModel.cs:321 after waiting 3.01E-05s
+2015-09-03 19:31:39.6229|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 30:RepositoryViewModel.cs:321 after blocking 0.0361663s
+2015-09-03 19:31:44.9150|INFO|thread:16|DashboardViewModel|Selected repository 'jmiguel2902/octo-hud-psd'
+2015-09-03 19:31:44.9150|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 31:GitClient.cs:653
+2015-09-03 19:31:44.9150|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 32:GitClient.cs:631
+2015-09-03 19:31:44.9150|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 31:GitClient.cs:653 after waiting 0.0086869s
+2015-09-03 19:31:44.9463|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 32:GitClient.cs:631 after waiting 0.0290757s
+2015-09-03 19:31:45.0400|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 31:GitClient.cs:653 after blocking 0.1227161s
+2015-09-03 19:31:45.2588|INFO|thread: 5|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 33:GitClient.cs:648
+2015-09-03 19:31:45.2588|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 33:GitClient.cs:648 after waiting 2.59E-05s
+2015-09-03 19:31:45.2900|INFO|thread: 5|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 34:GitClient.cs:221
+2015-09-03 19:31:45.2900|INFO|thread: 5|DashboardViewModel|Took 381ms to Create RepositoryViewModel for location C:\Users\Gudo\Desktop\octo-hud-psd
+2015-09-03 19:31:45.2900|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 34:GitClient.cs:221 after waiting 0.000207s
+2015-09-03 19:31:45.2900|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 32:GitClient.cs:631 after blocking 0.3513396s
+2015-09-03 19:31:45.2900|INFO|thread: 5|GitClient|Loading commits for repo: C:\Users\Gudo\Desktop\octo-hud-psd
+2015-09-03 19:31:45.3682|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 35:GitClient.cs:198
+2015-09-03 19:31:45.3682|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 36:RepositoryModel.cs:596
+2015-09-03 19:31:45.3838|INFO|thread: 5|ConcurrentRepositoryConnection|Loaded '1' commits for repo: C:\Users\Gudo\Desktop\octo-hud-psd\.
+2015-09-03 19:31:45.3838|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 35:GitClient.cs:198 after waiting 0.010198s
+2015-09-03 19:31:45.3838|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 34:GitClient.cs:221 after blocking 0.0942018s
+2015-09-03 19:31:45.3838|INFO|thread: 5|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 37:RepositoryViewModel.cs:321
+2015-09-03 19:31:45.3838|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 36:RepositoryModel.cs:596 after waiting 0.0148744s
+2015-09-03 19:31:45.3838|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 33:GitClient.cs:648 after blocking 0.1235975s
+2015-09-03 19:31:45.3994|INFO|thread: 5|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 38:RepositoryModel.cs:596
+2015-09-03 19:31:45.4151|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 35:GitClient.cs:198 after blocking 0.0347929s
+2015-09-03 19:31:45.4151|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 37:RepositoryViewModel.cs:321 after waiting 0.0299891s
+2015-09-03 19:31:45.4569|INFO|thread:29|AsyncReaderWriterLock|Released concurrent scheduler for operation: 37:RepositoryViewModel.cs:321 after blocking 0.0359236s
+2015-09-03 19:31:45.4569|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 38:RepositoryModel.cs:596 after waiting 0.0560027s
+2015-09-03 19:31:45.4726|INFO|thread:29|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 39:GitClient.cs:287
+2015-09-03 19:31:45.4726|INFO|thread:29|AsyncReaderWriterLock|Released concurrent scheduler for operation: 38:RepositoryModel.cs:596 after blocking 0.0112086s
+2015-09-03 19:31:45.4726|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 39:GitClient.cs:287 after waiting 0.0003996s
+2015-09-03 19:31:45.5351|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 40:GitClient.cs:636
+2015-09-03 19:31:45.6913|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 41:BranchesViewModel.cs:543
+2015-09-03 19:31:45.6913|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 42:RepositoryViewModel.cs:321
+2015-09-03 19:31:45.6913|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 43:BranchSynchronizer.cs:126
+2015-09-03 19:31:47.6790|INFO|thread:17|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 44:BranchSynchronizer.cs:126
+2015-09-03 19:31:47.6790|INFO|thread:17|AsyncReaderWriterLock|Released concurrent scheduler for operation: 36:RepositoryModel.cs:596 after blocking 2.2823997s
+2015-09-03 19:31:47.6790|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 40:GitClient.cs:636 after waiting 2.1371842s
+2015-09-03 19:31:47.6990|INFO|thread:17|AsyncReaderWriterLock|Released concurrent scheduler for operation: 40:GitClient.cs:636 after blocking 0.0200929s
+2015-09-03 19:31:47.6990|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 41:BranchesViewModel.cs:543 after waiting 1.9998243s
+2015-09-03 19:31:47.7350|INFO|thread:17|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:31:47.7350|INFO|thread:17|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:31:47.7350|INFO|thread:17|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\Gudo\Desktop\octo-hud-psd\
+2015-09-03 19:31:47.7350|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 41:BranchesViewModel.cs:543 after blocking 0.0379352s
+2015-09-03 19:31:47.7350|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 42:RepositoryViewModel.cs:321 after waiting 2.0377197s
+2015-09-03 19:31:47.8021|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 42:RepositoryViewModel.cs:321 after blocking 0.0591203s
+2015-09-03 19:31:47.8021|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 43:BranchSynchronizer.cs:126 after waiting 2.0957522s
+2015-09-03 19:31:47.8091|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 45:GitClient.cs:393
+2015-09-03 19:31:47.8091|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 46:GitClient.cs:393
+2015-09-03 19:31:47.8241|INFO|thread:18|ConcurrentRepositoryConnection|branch stats: ahead 0, behind 0 on master
+2015-09-03 19:31:47.8241|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 43:BranchSynchronizer.cs:126 after blocking 0.0229962s
+2015-09-03 19:31:47.8241|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 44:BranchSynchronizer.cs:126 after waiting 0.1459913s
+2015-09-03 19:31:47.8241|INFO|thread:18|ConcurrentRepositoryConnection|branch stats: ahead 0, behind 0 on master
+2015-09-03 19:31:47.8241|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 44:BranchSynchronizer.cs:126 after blocking 0.0062358s
+2015-09-03 19:31:47.8241|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 45:GitClient.cs:393 after waiting 0.0218715s
+2015-09-03 19:31:47.8831|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 47:ICommittedFileForklift.cs:57
+2015-09-03 19:31:48.6701|INFO|thread:15|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:31:48.6701|INFO|thread:15|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:31:48.6701|INFO|thread:15|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --name-status 533977f6c4195cb633d28202c3dd54d19269760c ', Working Directory: C:\Users\Gudo\Desktop\octo-hud-psd\
+2015-09-03 19:31:48.6701|INFO|thread:15|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:31:48.6701|INFO|thread:15|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:31:48.6701|INFO|thread:15|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --numstat 533977f6c4195cb633d28202c3dd54d19269760c ', Working Directory: C:\Users\Gudo\Desktop\octo-hud-psd\
+2015-09-03 19:31:49.8061|INFO|thread:15|AsyncReaderWriterLock|Released concurrent scheduler for operation: 45:GitClient.cs:393 after blocking 1.9752076s
+2015-09-03 19:31:49.8061|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 46:GitClient.cs:393 after waiting 1.9955397s
+2015-09-03 19:31:49.8091|INFO|thread: 5|ConcurrentRepositoryConnection|Took 2069ms to git status
+2015-09-03 19:31:49.8091|INFO|thread: 5|ConcurrentRepositoryConnection|Took 2069ms to git status and parse output
+2015-09-03 19:31:49.8091|INFO|thread:18|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:31:49.8091|INFO|thread:18|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:31:49.8091|INFO|thread:18|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --name-status 533977f6c4195cb633d28202c3dd54d19269760c ', Working Directory: C:\Users\Gudo\Desktop\octo-hud-psd\
+2015-09-03 19:31:49.8091|INFO|thread:18|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:31:49.8091|INFO|thread:18|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:31:49.8091|INFO|thread:18|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --numstat 533977f6c4195cb633d28202c3dd54d19269760c ', Working Directory: C:\Users\Gudo\Desktop\octo-hud-psd\
+2015-09-03 19:31:49.8261|INFO|thread: 1|SelectedCommitViewModel|Took 2020ms to load files for commit 533977f in repo C:\Users\Gudo\Desktop\octo-hud-psd
+2015-09-03 19:31:49.8611|INFO|thread: 5|NewCommitViewModel|Took 4388ms to load files for C:\Users\Gudo\Desktop\octo-hud-psd
+2015-09-03 19:31:49.8611|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 47:ICommittedFileForklift.cs:57 after waiting 1.9783778s
+2015-09-03 19:31:49.8611|INFO|thread: 1|NewCommitViewModel|Took 4ms to render file list for C:\Users\Gudo\Desktop\octo-hud-psd
+2015-09-03 19:31:49.8611|INFO|thread:29|AsyncReaderWriterLock|Released concurrent scheduler for operation: 47:ICommittedFileForklift.cs:57 after blocking 0.0049498s
+2015-09-03 19:31:49.8611|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 39:GitClient.cs:287 after blocking 4.3930463s
+2015-09-03 19:31:49.8611|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 48:RepositoryViewModel.cs:321
+2015-09-03 19:31:49.8761|INFO|thread:15|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 49:GitClient.cs:522
+2015-09-03 19:31:49.8761|INFO|thread:15|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 48:RepositoryViewModel.cs:321 after waiting 0.0094264s
+2015-09-03 19:31:49.8992|INFO|thread:20|AsyncReaderWriterLock|Released concurrent scheduler for operation: 48:RepositoryViewModel.cs:321 after blocking 0.0223979s
+2015-09-03 19:31:49.8992|INFO|thread:15|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 49:GitClient.cs:522 after waiting 0.0232594s
+2015-09-03 19:31:49.9452|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 46:GitClient.cs:393 after blocking 0.1386712s
+2015-09-03 19:31:49.9762|INFO|thread: 1|SelectedCommitViewModel|Took 2165ms to load files for commit 533977f in repo C:\Users\Gudo\Desktop\octo-hud-psd
+2015-09-03 19:31:50.0002|INFO|thread:34|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 50:GitClient.cs:522
+2015-09-03 19:31:50.0002|INFO|thread:34|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 50:GitClient.cs:522 after waiting 0.000111s
+2015-09-03 19:31:50.0622|INFO|thread:14|AsyncReaderWriterLock|Released concurrent scheduler for operation: 50:GitClient.cs:522 after blocking 0.0615014s
+2015-09-03 19:31:50.0622|INFO|thread:15|AsyncReaderWriterLock|Released concurrent scheduler for operation: 49:GitClient.cs:522 after blocking 0.1629763s
+2015-09-03 19:31:56.7521|ERROR|thread:22|GitHubResourceHandler|The resource http://github-app/comparison-graph/svg/progress.svg does not have a matching resource embedded in the assembly
+2015-09-03 19:31:58.8822|INFO|thread:16|DashboardViewModel|Selected repository 'jmiguel2902/curl'
+2015-09-03 19:31:58.8822|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 51:GitClient.cs:653
+2015-09-03 19:31:58.8822|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 52:GitClient.cs:631
+2015-09-03 19:31:58.8862|INFO|thread:37|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 51:GitClient.cs:653 after waiting 0.0005373s
+2015-09-03 19:31:58.8862|INFO|thread:37|AsyncReaderWriterLock|Released concurrent scheduler for operation: 51:GitClient.cs:653 after blocking 0.0042097s
+2015-09-03 19:31:58.8862|INFO|thread:37|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 52:GitClient.cs:631 after waiting 0.0047361s
+2015-09-03 19:31:59.0862|INFO|thread:37|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 53:GitClient.cs:648
+2015-09-03 19:31:59.0862|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 53:GitClient.cs:648 after waiting 0.0008941s
+2015-09-03 19:31:59.0902|INFO|thread:34|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 54:RepositoryViewModel.cs:321
+2015-09-03 19:31:59.0902|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 53:GitClient.cs:648 after blocking 0.0044355s
+2015-09-03 19:31:59.0902|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 54:RepositoryViewModel.cs:321 after waiting 0.0001086s
+2015-09-03 19:31:59.1382|INFO|thread:37|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 55:GitClient.cs:221
+2015-09-03 19:31:59.1382|INFO|thread:37|DashboardViewModel|Took 256ms to Create RepositoryViewModel for location C:\Users\Gudo\Documents\Visual Studio 2015\curl
+2015-09-03 19:31:59.1382|INFO|thread:37|AsyncReaderWriterLock|Released concurrent scheduler for operation: 52:GitClient.cs:631 after blocking 0.2511512s
+2015-09-03 19:31:59.1382|INFO|thread:37|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 55:GitClient.cs:221 after waiting 0.0005421s
+2015-09-03 19:31:59.1382|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 54:RepositoryViewModel.cs:321 after blocking 0.0524414s
+2015-09-03 19:31:59.1382|INFO|thread:34|GitClient|Loading commits for repo: C:\Users\Gudo\Documents\Visual Studio 2015\curl
+2015-09-03 19:31:59.2142|INFO|thread:34|ConcurrentRepositoryConnection|Loaded '5' commits for repo: C:\Users\Gudo\Documents\Visual Studio 2015\curl\.
+2015-09-03 19:31:59.2142|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 55:GitClient.cs:221 after blocking 0.0760746s
+2015-09-03 19:31:59.2302|INFO|thread:36|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 56:GitClient.cs:198
+2015-09-03 19:31:59.2302|INFO|thread:36|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 57:RepositoryModel.cs:596
+2015-09-03 19:31:59.2302|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 56:GitClient.cs:198 after waiting 0.0017785s
+2015-09-03 19:31:59.2302|INFO|thread:14|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 57:RepositoryModel.cs:596 after waiting 0.001598s
+2015-09-03 19:31:59.2302|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 58:RepositoryModel.cs:596
+2015-09-03 19:31:59.2302|INFO|thread:14|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 59:GitClient.cs:287
+2015-09-03 19:31:59.2302|INFO|thread:14|AsyncReaderWriterLock|Released concurrent scheduler for operation: 57:RepositoryModel.cs:596 after blocking 0.0076672s
+2015-09-03 19:31:59.2302|INFO|thread:14|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 58:RepositoryModel.cs:596 after waiting 0.0074203s
+2015-09-03 19:31:59.2462|INFO|thread:14|AsyncReaderWriterLock|Released concurrent scheduler for operation: 58:RepositoryModel.cs:596 after blocking 0.0088004s
+2015-09-03 19:31:59.2462|INFO|thread:14|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 59:GitClient.cs:287 after waiting 0.0093045s
+2015-09-03 19:31:59.2462|INFO|thread:14|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:31:59.2462|INFO|thread:14|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:31:59.2462|INFO|thread:14|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\Gudo\Documents\Visual Studio 2015\curl\
+2015-09-03 19:31:59.2782|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 60:BranchesViewModel.cs:543
+2015-09-03 19:31:59.2782|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 61:RepositoryViewModel.cs:321
+2015-09-03 19:31:59.3342|INFO|thread:29|AsyncReaderWriterLock|Released concurrent scheduler for operation: 56:GitClient.cs:198 after blocking 0.1015769s
+2015-09-03 19:31:59.3342|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 60:BranchesViewModel.cs:543 after waiting 0.0544741s
+2015-09-03 19:31:59.3462|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 60:BranchesViewModel.cs:543 after blocking 0.0144186s
+2015-09-03 19:31:59.3462|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 61:RepositoryViewModel.cs:321 after waiting 0.0686808s
+2015-09-03 19:31:59.4353|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 62:GitClient.cs:636
+2015-09-03 19:32:01.7527|INFO|thread:18|ConcurrentRepositoryConnection|Took 2495ms to git status
+2015-09-03 19:32:01.7527|INFO|thread:18|ConcurrentRepositoryConnection|Took 2495ms to git status and parse output
+2015-09-03 19:32:01.7527|INFO|thread:18|NewCommitViewModel|Took 2514ms to load files for C:\Users\Gudo\Documents\Visual Studio 2015\curl
+2015-09-03 19:32:01.7527|INFO|thread:14|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 62:GitClient.cs:636 after waiting 2.3056121s
+2015-09-03 19:32:01.7527|INFO|thread: 1|NewCommitViewModel|Took 1ms to render file list for C:\Users\Gudo\Documents\Visual Studio 2015\curl
+2015-09-03 19:32:01.7527|INFO|thread:14|AsyncReaderWriterLock|Released concurrent scheduler for operation: 62:GitClient.cs:636 after blocking 0.0035148s
+2015-09-03 19:32:01.7527|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 59:GitClient.cs:287 after blocking 2.5086802s
+2015-09-03 19:32:02.5689|INFO|thread: 1|AsyncReaderWriterLock|Released concurrent scheduler for operation: 61:RepositoryViewModel.cs:321 after blocking 3.220629s
+2015-09-03 19:32:02.5689|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 63:RepositoryViewModel.cs:321
+2015-09-03 19:32:02.5799|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 63:RepositoryViewModel.cs:321 after waiting 0.0105053s
+2015-09-03 19:32:03.6306|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 63:RepositoryViewModel.cs:321 after blocking 1.0502517s
+2015-09-03 19:32:46.5841|INFO|thread: 1|RepositoryHost|Log in from cache for login 'jmiguel2902' to host 'https://api.github.com/' SUCCEEDED
+2015-09-03 19:32:46.6041|INFO|thread: 1|AsyncReaderWriterLock|Acquiring exclusive scheduler for operation: 64:BranchSynchronizer.cs:238
+2015-09-03 19:32:46.6041|INFO|thread:34|AsyncReaderWriterLock|Acquired exclusive scheduler for operation: 64:BranchSynchronizer.cs:238 after waiting 0.0008307s
+2015-09-03 19:32:46.6801|INFO|thread:34|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:32:46.6801|INFO|thread:34|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:32:46.6801|INFO|thread:34|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'pull --progress --rebase --prune origin master ', Working Directory: C:\Users\Gudo\Desktop\octo-hud-psd\
+2015-09-03 19:32:47.1298|INFO|thread:37|BackgroundFetcher|Got a refresh period for C:\Users\Gudo\Documents\Visual Studio 2015\curl\.git of 300 seconds
+2015-09-03 19:32:47.1298|INFO|thread:37|BackgroundFetcher|Added a delay for C:\Users\Gudo\Documents\Visual Studio 2015\curl\.git of 6366 milliseconds
+2015-09-03 19:32:59.1606|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 65:GitClient.cs:648
+2015-09-03 19:32:59.1606|INFO|thread:37|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 65:GitClient.cs:648 after waiting 2.83E-05s
+2015-09-03 19:33:00.0086|INFO|thread:33|AsyncReaderWriterLock|Released concurrent scheduler for operation: 65:GitClient.cs:648 after blocking 0.8488915s
+2015-09-03 19:33:46.3766|WARN|thread:24|RepositoryModel|Failed creating exclusive connection for c:\Users\Josh Vera\GitHub\Windows\GitHub\Models\BranchSynchronizer.cs:238
+GitHub.IO.ProcessException: fatal: unable to access 'https://github.com/jmiguel2902/octo-hud-psd.git/': Empty reply from server
+2015-09-03 19:33:46.3766|INFO|thread:24|AsyncReaderWriterLock|Released exclusive scheduler for operation: 64:BranchSynchronizer.cs:238 after blocking 59.7746588s
+2015-09-03 19:33:46.3966|WARN|thread:30|PullRequestViewModel|Error refreshing pull requests from server
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+2015-09-03 19:33:46.4166|WARN|thread: 1|StandardUserErrors|Showing user error You might need to open a shell and debug the state of this repo.
+GitHub.IO.ProcessException: fatal: unable to access 'https://github.com/jmiguel2902/octo-hud-psd.git/': Empty reply from server
+2015-09-03 19:33:46.4166|INFO|thread: 1|ObservableEx|Could not refresh repository information from API failed.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+2015-09-03 19:33:46.4486|INFO|thread: 1|NewPullRequestViewModel|No matching pull request found, clearing selection...
+2015-09-03 19:33:46.4486|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 66:RepositoryViewModel.cs:321
+2015-09-03 19:33:46.4486|INFO|thread:34|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 66:RepositoryViewModel.cs:321 after waiting 2.89E-05s
+2015-09-03 19:33:46.4726|INFO|thread:24|AsyncReaderWriterLock|Released concurrent scheduler for operation: 66:RepositoryViewModel.cs:321 after blocking 0.020303s
+2015-09-03 19:33:46.5246|WARN|thread:18|PullRequestViewModel|Error refreshing pull requests from server
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+2015-09-03 19:33:46.5366|INFO|thread: 1|NewPullRequestViewModel|No matching pull request found, clearing selection...
+2015-09-03 19:33:46.5366|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 67:RepositoryViewModel.cs:321
+2015-09-03 19:33:46.5366|INFO|thread:30|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 67:RepositoryViewModel.cs:321 after waiting 6.7E-05s
+2015-09-03 19:33:47.5490|INFO|thread:13|AsyncReaderWriterLock|Released concurrent scheduler for operation: 67:RepositoryViewModel.cs:321 after blocking 1.0140618s
+2015-09-03 19:36:55.9792|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 68:GitClient.cs:198
+2015-09-03 19:36:55.9792|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 68:GitClient.cs:198 after waiting 4.82E-05s
+2015-09-03 19:36:55.9792|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 69:RepositoryModel.cs:596
+2015-09-03 19:36:55.9792|INFO|thread:44|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 69:RepositoryModel.cs:596 after waiting 0.0008506s
+2015-09-03 19:36:55.9992|INFO|thread:24|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 70:GitClient.cs:287
+2015-09-03 19:36:55.9992|INFO|thread:24|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 71:BranchSynchronizer.cs:126
+2015-09-03 19:36:55.9992|INFO|thread:24|AsyncReaderWriterLock|Released concurrent scheduler for operation: 69:RepositoryModel.cs:596 after blocking 0.017762s
+2015-09-03 19:36:55.9992|INFO|thread:44|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 70:GitClient.cs:287 after waiting 0.00069s
+2015-09-03 19:36:55.9992|INFO|thread:24|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:36:55.9992|INFO|thread:24|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:36:55.9992|INFO|thread:24|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\Gudo\Documents\Visual Studio 2015\curl\
+2015-09-03 19:36:56.1472|INFO|thread:41|AsyncReaderWriterLock|Released concurrent scheduler for operation: 68:GitClient.cs:198 after blocking 0.1682431s
+2015-09-03 19:36:56.1472|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 71:BranchSynchronizer.cs:126 after waiting 0.1494397s
+2015-09-03 19:36:56.1592|INFO|thread:18|ConcurrentRepositoryConnection|branch stats: ahead 0, behind 0 on master
+2015-09-03 19:36:56.1592|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 71:BranchSynchronizer.cs:126 after blocking 0.0086368s
+2015-09-03 19:36:56.2072|INFO|thread:24|ConcurrentRepositoryConnection|Took 196ms to git status
+2015-09-03 19:36:56.2072|INFO|thread:24|ConcurrentRepositoryConnection|Took 196ms to git status and parse output
+2015-09-03 19:36:56.2072|INFO|thread:24|NewCommitViewModel|Took 209ms to load files for C:\Users\Gudo\Documents\Visual Studio 2015\curl
+2015-09-03 19:36:56.2072|INFO|thread: 1|NewCommitViewModel|Took 2ms to render file list for C:\Users\Gudo\Documents\Visual Studio 2015\curl
+2015-09-03 19:36:56.2072|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 72:RepositoryViewModel.cs:321
+2015-09-03 19:36:56.2072|INFO|thread:24|AsyncReaderWriterLock|Released concurrent scheduler for operation: 70:GitClient.cs:287 after blocking 0.210664s
+2015-09-03 19:36:56.2072|INFO|thread:24|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 72:RepositoryViewModel.cs:321 after waiting 0.0001183s
+2015-09-03 19:36:57.0749|INFO|thread:45|AsyncReaderWriterLock|Released concurrent scheduler for operation: 72:RepositoryViewModel.cs:321 after blocking 0.862576s
+2015-09-03 19:36:58.0278|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 73:GitClient.cs:287
+2015-09-03 19:36:58.0278|INFO|thread:41|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 73:GitClient.cs:287 after waiting 3.07E-05s
+2015-09-03 19:36:58.6027|INFO|thread:45|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:36:58.6027|INFO|thread:45|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:36:58.6027|INFO|thread:45|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\Gudo\Desktop\octo-hud-psd\
+2015-09-03 19:36:59.5393|INFO|thread:16|DashboardViewModel|Selected repository 'jmiguel2902/Desktop'
+2015-09-03 19:36:59.5393|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 74:GitClient.cs:653
+2015-09-03 19:36:59.5393|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 75:GitClient.cs:631
+2015-09-03 19:36:59.5863|INFO|thread:24|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 74:GitClient.cs:653 after waiting 0.046499s
+2015-09-03 19:37:00.6327|INFO|thread:46|AsyncReaderWriterLock|Released concurrent scheduler for operation: 74:GitClient.cs:653 after blocking 1.0454992s
+2015-09-03 19:37:00.6327|INFO|thread:24|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 75:GitClient.cs:631 after waiting 1.0917501s
+2015-09-03 19:37:00.8158|INFO|thread:46|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 76:GitClient.cs:648
+2015-09-03 19:37:00.8558|INFO|thread:46|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 77:GitClient.cs:221
+2015-09-03 19:37:00.8558|INFO|thread:46|DashboardViewModel|Took 1316ms to Create RepositoryViewModel for location C:\Users\Gudo\Desktop
+2015-09-03 19:37:00.8558|INFO|thread:24|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 76:GitClient.cs:648 after waiting 0.0397844s
+2015-09-03 19:37:00.8558|INFO|thread:46|AsyncReaderWriterLock|Released concurrent scheduler for operation: 75:GitClient.cs:631 after blocking 0.2232896s
+2015-09-03 19:37:00.8558|INFO|thread:46|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 78:RepositoryViewModel.cs:321
+2015-09-03 19:37:00.8558|INFO|thread:24|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 77:GitClient.cs:221 after waiting 0.0081924s
+2015-09-03 19:37:00.8558|INFO|thread:24|GitClient|Loading commits for repo: C:\Users\Gudo\Desktop
+2015-09-03 19:37:00.8558|INFO|thread:46|AsyncReaderWriterLock|Released concurrent scheduler for operation: 76:GitClient.cs:648 after blocking 0.0130638s
+2015-09-03 19:37:00.8558|INFO|thread:46|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 78:RepositoryViewModel.cs:321 after waiting 0.0053411s
+2015-09-03 19:37:00.9129|INFO|thread:46|AsyncReaderWriterLock|Released concurrent scheduler for operation: 78:RepositoryViewModel.cs:321 after blocking 0.0433645s
+2015-09-03 19:37:00.9129|INFO|thread:45|ConcurrentRepositoryConnection|Took 2305ms to git status
+2015-09-03 19:37:00.9129|INFO|thread:45|ConcurrentRepositoryConnection|Took 2305ms to git status and parse output
+2015-09-03 19:37:00.9129|INFO|thread:24|ConcurrentRepositoryConnection|Loaded '1' commits for repo: C:\Users\Gudo\Desktop\.
+2015-09-03 19:37:00.9169|INFO|thread:24|AsyncReaderWriterLock|Released concurrent scheduler for operation: 77:GitClient.cs:221 after blocking 0.0525332s
+2015-09-03 19:37:00.9169|INFO|thread:45|NewCommitViewModel|Took 2890ms to load files for C:\Users\Gudo\Desktop\octo-hud-psd
+2015-09-03 19:37:00.9169|INFO|thread:45|AsyncReaderWriterLock|Released concurrent scheduler for operation: 73:GitClient.cs:287 after blocking 2.8903887s
+2015-09-03 19:37:00.9489|INFO|thread:45|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 79:GitClient.cs:198
+2015-09-03 19:37:00.9489|INFO|thread:45|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 80:RepositoryModel.cs:596
+2015-09-03 19:37:00.9489|INFO|thread:45|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 79:GitClient.cs:198 after waiting 0.0018129s
+2015-09-03 19:37:00.9489|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 81:RepositoryModel.cs:596
+2015-09-03 19:37:00.9489|INFO|thread:41|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 80:RepositoryModel.cs:596 after waiting 0.0060233s
+2015-09-03 19:37:00.9649|INFO|thread:41|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 82:GitClient.cs:287
+2015-09-03 19:37:00.9649|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 83:BranchesViewModel.cs:543
+2015-09-03 19:37:00.9649|INFO|thread:41|AsyncReaderWriterLock|Released concurrent scheduler for operation: 80:RepositoryModel.cs:596 after blocking 0.010393s
+2015-09-03 19:37:00.9649|INFO|thread:41|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 81:RepositoryModel.cs:596 after waiting 0.0138698s
+2015-09-03 19:37:00.9649|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 84:RepositoryViewModel.cs:321
+2015-09-03 19:37:00.9649|INFO|thread:41|AsyncReaderWriterLock|Released concurrent scheduler for operation: 81:RepositoryModel.cs:596 after blocking 0.0118238s
+2015-09-03 19:37:00.9649|INFO|thread:41|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 82:GitClient.cs:287 after waiting 0.0123629s
+2015-09-03 19:37:01.0561|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 85:GitClient.cs:636
+2015-09-03 19:37:01.2868|INFO|thread: 1|NewCommitViewModel|Took 368ms to render file list for C:\Users\Gudo\Desktop\octo-hud-psd
+2015-09-03 19:37:01.2868|INFO|thread: 1|BranchSynchronizer|Completing sync for C:\Users\Gudo\Desktop\octo-hud-psd - master
+2015-09-03 19:37:01.2868|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 86:RepositoryViewModel.cs:321
+2015-09-03 19:37:01.2868|INFO|thread: 1|BranchSynchronizer|Took 254689ms to sync repository C:\Users\Gudo\Desktop\octo-hud-psd - master
+2015-09-03 19:37:01.5908|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 86:RepositoryViewModel.cs:321 after waiting 0.3038215s
+2015-09-03 19:37:02.1822|INFO|thread: 4|PortablePackageManager|About to cleanup old package 'C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_ee8c0ca6-cf84-4bff-967c-196d56d786cf', current version is 'C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4'
+2015-09-03 19:37:03.1008|INFO|thread:16|DashboardViewModel|Selected repository '/Tutorial'
+2015-09-03 19:37:03.1068|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 87:GitClient.cs:198
+2015-09-03 19:37:03.1068|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 88:RepositoryModel.cs:596
+2015-09-03 19:37:03.1478|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 87:GitClient.cs:198 after waiting 0.0410202s
+2015-09-03 19:37:03.1478|INFO|thread:47|AsyncReaderWriterLock|Released concurrent scheduler for operation: 86:RepositoryViewModel.cs:321 after blocking 1.5572241s
+2015-09-03 19:37:03.1678|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 88:RepositoryModel.cs:596 after waiting 0.0577614s
+2015-09-03 19:37:03.1678|INFO|thread:47|AsyncReaderWriterLock|Released concurrent scheduler for operation: 87:GitClient.cs:198 after blocking 0.0202143s
+2015-09-03 19:37:03.1859|INFO|thread:46|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:37:03.1859|INFO|thread:46|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:37:03.1859|INFO|thread:46|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\Gudo\Desktop\
+2015-09-03 19:37:03.1859|INFO|thread:44|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 89:GitClient.cs:287
+2015-09-03 19:37:03.1859|INFO|thread:44|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 90:BranchSynchronizer.cs:126
+2015-09-03 19:37:03.1859|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 89:GitClient.cs:287 after waiting 0.0010039s
+2015-09-03 19:37:03.1859|INFO|thread:44|AsyncReaderWriterLock|Released concurrent scheduler for operation: 88:RepositoryModel.cs:596 after blocking 0.021892s
+2015-09-03 19:37:03.2009|INFO|thread:42|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 90:BranchSynchronizer.cs:126 after waiting 0.0111392s
+2015-09-03 19:37:03.2009|INFO|thread:42|ConcurrentRepositoryConnection|branch stats: remote not found for master
+2015-09-03 19:37:03.2009|INFO|thread:42|AsyncReaderWriterLock|Released concurrent scheduler for operation: 90:BranchSynchronizer.cs:126 after blocking 0.0063161s
+2015-09-03 19:37:03.2309|INFO|thread:45|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 83:BranchesViewModel.cs:543 after waiting 2.26562s
+2015-09-03 19:37:03.2509|INFO|thread:45|AsyncReaderWriterLock|Released concurrent scheduler for operation: 83:BranchesViewModel.cs:543 after blocking 0.0194512s
+2015-09-03 19:37:03.2509|INFO|thread:45|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 84:RepositoryViewModel.cs:321 after waiting 2.2849172s
+2015-09-03 19:37:03.2669|INFO|thread:42|AsyncReaderWriterLock|Released concurrent scheduler for operation: 79:GitClient.cs:198 after blocking 2.3159888s
+2015-09-03 19:37:03.2779|INFO|thread:44|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:37:03.2779|INFO|thread:44|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:37:03.2779|INFO|thread:44|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo\
+2015-09-03 19:37:03.3540|INFO|thread:45|AsyncReaderWriterLock|Released concurrent scheduler for operation: 84:RepositoryViewModel.cs:321 after blocking 0.1035498s
+2015-09-03 19:37:03.3540|INFO|thread:45|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 85:GitClient.cs:636 after waiting 2.2925307s
+2015-09-03 19:37:03.3540|INFO|thread:45|AsyncReaderWriterLock|Released concurrent scheduler for operation: 85:GitClient.cs:636 after blocking 0.0041741s
+2015-09-03 19:37:03.4452|INFO|thread:46|ConcurrentRepositoryConnection|Took 257ms to git status
+2015-09-03 19:37:03.4452|INFO|thread:46|ConcurrentRepositoryConnection|Took 257ms to git status and parse output
+2015-09-03 19:37:03.6068|INFO|thread:44|ConcurrentRepositoryConnection|Took 298ms to git status
+2015-09-03 19:37:03.6068|INFO|thread:44|ConcurrentRepositoryConnection|Took 299ms to git status and parse output
+2015-09-03 19:37:03.6589|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 91:BranchSynchronizer.cs:126
+2015-09-03 19:37:03.6589|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 92:GitClient.cs:636
+2015-09-03 19:37:03.8001|INFO|thread:45|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 91:BranchSynchronizer.cs:126 after waiting 0.1407673s
+2015-09-03 19:37:03.8001|INFO|thread:45|ConcurrentRepositoryConnection|branch stats: remote not found for master
+2015-09-03 19:37:03.8001|INFO|thread:45|AsyncReaderWriterLock|Released concurrent scheduler for operation: 91:BranchSynchronizer.cs:126 after blocking 0.0058808s
+2015-09-03 19:37:03.8001|INFO|thread:45|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 92:GitClient.cs:636 after waiting 0.1450784s
+2015-09-03 19:37:03.8101|INFO|thread:42|AsyncReaderWriterLock|Released concurrent scheduler for operation: 92:GitClient.cs:636 after blocking 0.0045115s
+2015-09-03 19:37:03.8101|INFO|thread:46|NewCommitViewModel|Took 2845ms to load files for C:\Users\Gudo\Desktop
+2015-09-03 19:37:03.8101|INFO|thread:46|AsyncReaderWriterLock|Released concurrent scheduler for operation: 82:GitClient.cs:287 after blocking 2.8328574s
+2015-09-03 19:37:03.8101|INFO|thread:44|NewCommitViewModel|Took 621ms to load files for C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo
+2015-09-03 19:37:03.8101|INFO|thread:44|AsyncReaderWriterLock|Released concurrent scheduler for operation: 89:GitClient.cs:287 after blocking 0.6204938s
+2015-09-03 19:37:04.1273|INFO|thread: 1|NewCommitViewModel|Took 317ms to render file list for C:\Users\Gudo\Desktop
+2015-09-03 19:37:04.1273|INFO|thread: 1|NewCommitViewModel|Took 317ms to render file list for C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_fdbf2020839cde135ff9dbed7d503f8e03fa3ab4\new-repo
+2015-09-03 19:37:04.1273|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 93:RepositoryViewModel.cs:321
+2015-09-03 19:37:04.1513|INFO|thread:44|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 93:RepositoryViewModel.cs:321 after waiting 0.0210106s
+2015-09-03 19:37:04.1513|INFO|thread:39|AsyncReaderWriterLock|Released concurrent scheduler for operation: 93:RepositoryViewModel.cs:321 after blocking 0.0195134s
+2015-09-03 19:37:04.4883|INFO|thread: 4|MsysGitCertificateInstaller|Found certificate cache, loaded 162 certificates
+2015-09-03 19:37:04.4883|INFO|thread: 4|MsysGitCertificateInstaller|Created certificate bundle with 163 entries
+2015-09-03 19:37:04.5040|INFO|thread: 4|StartupSequence|Took 241ms to Update certificate bundle from system store
+2015-09-03 19:37:06.2384|INFO|thread:16|DashboardViewModel|Selected repository 'jmiguel2902/curl'
+2015-09-03 19:37:06.2384|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 94:GitClient.cs:198
+2015-09-03 19:37:06.2384|INFO|thread:46|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 94:GitClient.cs:198 after waiting 2.65E-05s
+2015-09-03 19:37:06.2384|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 95:RepositoryModel.cs:596
+2015-09-03 19:37:06.3280|INFO|thread:42|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 95:RepositoryModel.cs:596 after waiting 0.0778839s
+2015-09-03 19:37:06.3280|INFO|thread:13|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 96:GitClient.cs:287
+2015-09-03 19:37:06.3280|INFO|thread:13|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 97:BranchSynchronizer.cs:126
+2015-09-03 19:37:06.3280|INFO|thread:13|AsyncReaderWriterLock|Released concurrent scheduler for operation: 95:RepositoryModel.cs:596 after blocking 0.0080379s
+2015-09-03 19:37:06.3280|INFO|thread:42|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 96:GitClient.cs:287 after waiting 0.0007347s
+2015-09-03 19:37:06.3440|INFO|thread:42|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:37:06.3440|INFO|thread:42|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:37:06.3440|INFO|thread:42|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\Gudo\Documents\Visual Studio 2015\curl\
+2015-09-03 19:37:06.3680|INFO|thread:46|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 97:BranchSynchronizer.cs:126 after waiting 0.0321311s
+2015-09-03 19:37:06.3760|INFO|thread:46|ConcurrentRepositoryConnection|branch stats: ahead 0, behind 0 on master
+2015-09-03 19:37:06.3760|INFO|thread:46|AsyncReaderWriterLock|Released concurrent scheduler for operation: 97:BranchSynchronizer.cs:126 after blocking 0.0068467s
+2015-09-03 19:37:06.3760|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 94:GitClient.cs:198 after blocking 0.1254992s
+2015-09-03 19:37:06.4720|INFO|thread:40|ConcurrentRepositoryConnection|Took 125ms to git status
+2015-09-03 19:37:06.4720|INFO|thread:40|ConcurrentRepositoryConnection|Took 125ms to git status and parse output
+2015-09-03 19:37:06.4800|INFO|thread:40|NewCommitViewModel|Took 142ms to load files for C:\Users\Gudo\Documents\Visual Studio 2015\curl
+2015-09-03 19:37:06.4800|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 96:GitClient.cs:287 after blocking 0.1419832s
+2015-09-03 19:37:06.5160|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 98:BranchSynchronizer.cs:126
+2015-09-03 19:37:06.5160|INFO|thread:30|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 98:BranchSynchronizer.cs:126 after waiting 3.38E-05s
+2015-09-03 19:37:06.5160|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 99:GitClient.cs:636
+2015-09-03 19:37:06.5160|INFO|thread:39|ConcurrentRepositoryConnection|branch stats: ahead 0, behind 0 on master
+2015-09-03 19:37:06.5160|INFO|thread:39|AsyncReaderWriterLock|Released concurrent scheduler for operation: 98:BranchSynchronizer.cs:126 after blocking 0.0071896s
+2015-09-03 19:37:06.5160|INFO|thread:30|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 99:GitClient.cs:636 after waiting 0.0055505s
+2015-09-03 19:37:06.5280|INFO|thread:39|AsyncReaderWriterLock|Released concurrent scheduler for operation: 99:GitClient.cs:636 after blocking 0.0034061s
+2015-09-03 19:37:06.7197|INFO|thread: 1|NewCommitViewModel|Took 238ms to render file list for C:\Users\Gudo\Documents\Visual Studio 2015\curl
+2015-09-03 19:37:06.7197|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 100:RepositoryViewModel.cs:321
+2015-09-03 19:37:06.7197|INFO|thread:37|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 100:RepositoryViewModel.cs:321 after waiting 2.83E-05s
+2015-09-03 19:37:07.5410|INFO|thread:44|AsyncReaderWriterLock|Released concurrent scheduler for operation: 100:RepositoryViewModel.cs:321 after blocking 0.821106s
+2015-09-03 19:37:11.4499|INFO|thread:16|DashboardViewModel|Selected repository ''
+2015-09-03 19:37:11.4499|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 101:GitClient.cs:653
+2015-09-03 19:37:11.4499|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 102:GitClient.cs:631
+2015-09-03 19:37:11.4499|INFO|thread:39|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 101:GitClient.cs:653 after waiting 0.0011488s
+2015-09-03 19:37:11.4499|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 102:GitClient.cs:631 after waiting 0.0019385s
+2015-09-03 19:37:11.5139|INFO|thread:41|AsyncReaderWriterLock|Released concurrent scheduler for operation: 101:GitClient.cs:653 after blocking 0.0581797s
+2015-09-03 19:37:11.7221|INFO|thread:45|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 103:GitClient.cs:648
+2015-09-03 19:37:11.7221|INFO|thread:42|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 103:GitClient.cs:648 after waiting 3.38E-05s
+2015-09-03 19:37:11.7221|INFO|thread:46|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 104:RepositoryViewModel.cs:321
+2015-09-03 19:37:11.7221|INFO|thread:46|AsyncReaderWriterLock|Released concurrent scheduler for operation: 103:GitClient.cs:648 after blocking 0.0042791s
+2015-09-03 19:37:11.7221|INFO|thread:42|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 104:RepositoryViewModel.cs:321 after waiting 0.0004606s
+2015-09-03 19:37:11.7541|INFO|thread:45|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 105:GitClient.cs:221
+2015-09-03 19:37:11.7541|INFO|thread:45|DashboardViewModel|Took 301ms to Create RepositoryViewModel for location C:\Users\Gudo\Documents\GitHub\android
+2015-09-03 19:37:11.7541|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 105:GitClient.cs:221 after waiting 0.0003127s
+2015-09-03 19:37:11.7541|INFO|thread:45|AsyncReaderWriterLock|Released concurrent scheduler for operation: 102:GitClient.cs:631 after blocking 0.2972874s
+2015-09-03 19:37:11.7671|INFO|thread:36|GitClient|Loading commits for repo: C:\Users\Gudo\Documents\GitHub\android
+2015-09-03 19:37:11.8511|INFO|thread:13|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 106:GitClient.cs:198
+2015-09-03 19:37:11.8511|INFO|thread:13|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 107:RepositoryModel.cs:596
+2015-09-03 19:37:11.8541|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 108:RepositoryModel.cs:596
+2015-09-03 19:37:11.8541|INFO|thread:42|AsyncReaderWriterLock|Released concurrent scheduler for operation: 104:RepositoryViewModel.cs:321 after blocking 0.1293147s
+2015-09-03 19:37:11.8541|INFO|thread:42|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 106:GitClient.cs:198 after waiting 0.0059798s
+2015-09-03 19:37:11.8762|INFO|thread:42|AsyncReaderWriterLock|Released concurrent scheduler for operation: 106:GitClient.cs:198 after blocking 0.0198436s
+2015-09-03 19:37:11.8762|INFO|thread:42|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 107:RepositoryModel.cs:596 after waiting 0.0255578s
+2015-09-03 19:37:11.8762|INFO|thread:42|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 109:GitClient.cs:287
+2015-09-03 19:37:11.8762|INFO|thread:42|AsyncReaderWriterLock|Released concurrent scheduler for operation: 107:RepositoryModel.cs:596 after blocking 0.0069409s
+2015-09-03 19:37:11.8762|INFO|thread:42|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 108:RepositoryModel.cs:596 after waiting 0.0289869s
+2015-09-03 19:37:11.8902|INFO|thread:42|AsyncReaderWriterLock|Released concurrent scheduler for operation: 108:RepositoryModel.cs:596 after blocking 0.006921s
+2015-09-03 19:37:11.8902|INFO|thread:42|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 109:GitClient.cs:287 after waiting 0.0074287s
+2015-09-03 19:37:11.8902|INFO|thread:18|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:37:11.8902|INFO|thread:18|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:37:11.8902|INFO|thread:18|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\Gudo\Documents\GitHub\android\
+2015-09-03 19:37:11.9362|INFO|thread:36|ConcurrentRepositoryConnection|Loaded '5' commits for repo: C:\Users\Gudo\Documents\GitHub\android\.
+2015-09-03 19:37:11.9362|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 105:GitClient.cs:221 after blocking 0.1825784s
+2015-09-03 19:37:11.9842|INFO|thread:18|ConcurrentRepositoryConnection|Took 83ms to git status
+2015-09-03 19:37:11.9842|INFO|thread:18|ConcurrentRepositoryConnection|Took 83ms to git status and parse output
+2015-09-03 19:37:11.9842|INFO|thread:18|NewCommitViewModel|Took 105ms to load files for C:\Users\Gudo\Documents\GitHub\android
+2015-09-03 19:37:11.9842|INFO|thread:18|AsyncReaderWriterLock|Released concurrent scheduler for operation: 109:GitClient.cs:287 after blocking 0.0976835s
+2015-09-03 19:37:11.9842|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 110:GitClient.cs:636
+2015-09-03 19:37:11.9842|INFO|thread:41|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 110:GitClient.cs:636 after waiting 3.92E-05s
+2015-09-03 19:37:11.9972|INFO|thread:39|AsyncReaderWriterLock|Released concurrent scheduler for operation: 110:GitClient.cs:636 after blocking 0.0035094s
+2015-09-03 19:37:12.1784|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 111:BranchesViewModel.cs:543
+2015-09-03 19:37:12.1784|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 111:BranchesViewModel.cs:543 after waiting 2.95E-05s
+2015-09-03 19:37:12.1784|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 112:RepositoryViewModel.cs:321
+2015-09-03 19:37:12.1784|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 113:BranchSynchronizer.cs:126
+2015-09-03 19:37:12.1924|INFO|thread:47|AsyncReaderWriterLock|Released concurrent scheduler for operation: 111:BranchesViewModel.cs:543 after blocking 0.014092s
+2015-09-03 19:37:12.1924|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 112:RepositoryViewModel.cs:321 after waiting 0.0137569s
+2015-09-03 19:37:12.1924|INFO|thread:47|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 113:BranchSynchronizer.cs:126 after waiting 0.012189s
+2015-09-03 19:37:12.1984|INFO|thread:30|ConcurrentRepositoryConnection|branch stats: remote not found for master
+2015-09-03 19:37:12.1984|INFO|thread:30|AsyncReaderWriterLock|Released concurrent scheduler for operation: 113:BranchSynchronizer.cs:126 after blocking 0.0061555s
+2015-09-03 19:37:12.1984|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 112:RepositoryViewModel.cs:321 after blocking 0.0178338s
+2015-09-03 19:37:12.2494|INFO|thread: 1|NewCommitViewModel|Took 261ms to render file list for C:\Users\Gudo\Documents\GitHub\android
+2015-09-03 19:37:12.2494|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 114:RepositoryViewModel.cs:321
+2015-09-03 19:37:12.2494|INFO|thread: 4|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 114:RepositoryViewModel.cs:321 after waiting 2.59E-05s
+2015-09-03 19:37:12.2494|INFO|thread: 1|AsyncReaderWriterLock|Released concurrent scheduler for operation: 114:RepositoryViewModel.cs:321 after blocking 2.59E-05s
+2015-09-03 19:37:12.2494|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 115:RepositoryViewModel.cs:321
+2015-09-03 19:37:12.2494|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 116:GitClient.cs:393
+2015-09-03 19:37:12.2494|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 117:GitClient.cs:393
+2015-09-03 19:37:12.2874|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 115:RepositoryViewModel.cs:321 after waiting 0.0346498s
+2015-09-03 19:37:12.3695|INFO|thread: 4|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 116:GitClient.cs:393 after waiting 0.1128024s
+2015-09-03 19:37:12.3765|INFO|thread: 4|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:37:12.3765|INFO|thread: 4|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:37:12.3765|INFO|thread: 4|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --name-status bea9ec222575cd570938c39777ecef2839a4fe36 ', Working Directory: C:\Users\Gudo\Documents\GitHub\android\
+2015-09-03 19:37:12.3765|INFO|thread: 4|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:37:12.3765|INFO|thread: 4|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:37:12.3765|INFO|thread: 4|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --numstat bea9ec222575cd570938c39777ecef2839a4fe36 ', Working Directory: C:\Users\Gudo\Documents\GitHub\android\
+2015-09-03 19:37:12.3945|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 117:GitClient.cs:393 after waiting 0.1355252s
+2015-09-03 19:37:12.3945|INFO|thread:18|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:37:12.3945|INFO|thread:18|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:37:12.3945|INFO|thread:18|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --name-status bea9ec222575cd570938c39777ecef2839a4fe36 ', Working Directory: C:\Users\Gudo\Documents\GitHub\android\
+2015-09-03 19:37:12.4055|INFO|thread:18|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:37:12.4055|INFO|thread:18|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:37:12.4055|INFO|thread:18|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'diff-tree --root -m -r -z --numstat bea9ec222575cd570938c39777ecef2839a4fe36 ', Working Directory: C:\Users\Gudo\Documents\GitHub\android\
+2015-09-03 19:37:12.4055|INFO|thread:42|AsyncReaderWriterLock|Released concurrent scheduler for operation: 115:RepositoryViewModel.cs:321 after blocking 0.1209641s
+2015-09-03 19:37:12.6647|INFO|thread:38|AsyncReaderWriterLock|Released concurrent scheduler for operation: 117:GitClient.cs:393 after blocking 0.2706381s
+2015-09-03 19:37:12.6687|INFO|thread:33|AsyncReaderWriterLock|Released concurrent scheduler for operation: 116:GitClient.cs:393 after blocking 0.2989114s
+2015-09-03 19:37:12.9559|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 118:ICommittedFileForklift.cs:57
+2015-09-03 19:37:12.9659|INFO|thread: 4|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 118:ICommittedFileForklift.cs:57 after waiting 0.0097995s
+2015-09-03 19:37:12.9659|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 118:ICommittedFileForklift.cs:57 after blocking 0.0063022s
+2015-09-03 19:37:12.9659|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 119:ICommittedFileForklift.cs:57
+2015-09-03 19:37:12.9919|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 120:ICommittedFileForklift.cs:57
+2015-09-03 19:37:13.0069|INFO|thread:18|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 119:ICommittedFileForklift.cs:57 after waiting 0.0325869s
+2015-09-03 19:37:13.0109|INFO|thread:38|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 120:ICommittedFileForklift.cs:57 after waiting 0.0190056s
+2015-09-03 19:37:13.0109|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 119:ICommittedFileForklift.cs:57 after blocking 0.0056882s
+2015-09-03 19:37:13.0109|INFO|thread:37|AsyncReaderWriterLock|Released concurrent scheduler for operation: 120:ICommittedFileForklift.cs:57 after blocking 0.0047597s
+2015-09-03 19:37:13.0109|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 121:ICommittedFileForklift.cs:57
+2015-09-03 19:37:13.0379|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 122:ICommittedFileForklift.cs:57
+2015-09-03 19:37:13.0509|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 121:ICommittedFileForklift.cs:57 after waiting 0.0309973s
+2015-09-03 19:37:13.0509|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 123:ICommittedFileForklift.cs:57
+2015-09-03 19:37:13.0509|INFO|thread:30|AsyncReaderWriterLock|Released concurrent scheduler for operation: 121:ICommittedFileForklift.cs:57 after blocking 0.0058186s
+2015-09-03 19:37:13.0509|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 122:ICommittedFileForklift.cs:57 after waiting 0.0185559s
+2015-09-03 19:37:13.0509|INFO|thread:30|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 123:ICommittedFileForklift.cs:57 after waiting 0.001013s
+2015-09-03 19:37:13.0679|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 123:ICommittedFileForklift.cs:57 after blocking 0.0103199s
+2015-09-03 19:37:13.0679|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 122:ICommittedFileForklift.cs:57 after blocking 0.0120333s
+2015-09-03 19:37:13.1010|INFO|thread: 1|ObservableEx|Could not refresh repository information from API failed.
+System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'api.github.com'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Octokit.Internal.HttpClientAdapter.<Send>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Octokit.Connection.<RunRequest>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Octokit.Connection.<Run>d__23`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Octokit.ApiConnection.<Get>d__0`1.MoveNext()
+2015-09-03 19:37:13.2761|INFO|thread: 1|SelectedCommitViewModel|Took 1017ms to load files for commit bea9ec2 in repo C:\Users\Gudo\Documents\GitHub\android
+2015-09-03 19:37:13.2761|INFO|thread: 1|SelectedCommitViewModel|Took 1020ms to load files for commit bea9ec2 in repo C:\Users\Gudo\Documents\GitHub\android
+2015-09-03 19:37:16.3311|INFO|thread:16|DashboardViewModel|Selected repository 'jmiguel2902/curl'
+2015-09-03 19:37:16.3311|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 124:GitClient.cs:198
+2015-09-03 19:37:16.3311|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 124:GitClient.cs:198 after waiting 3.01E-05s
+2015-09-03 19:37:16.3311|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 125:RepositoryModel.cs:596
+2015-09-03 19:37:16.3624|INFO|thread:30|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 125:RepositoryModel.cs:596 after waiting 0.0201732s
+2015-09-03 19:37:16.3624|INFO|thread:36|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 126:GitClient.cs:287
+2015-09-03 19:37:16.3624|INFO|thread:36|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 127:BranchSynchronizer.cs:126
+2015-09-03 19:37:16.3624|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 125:RepositoryModel.cs:596 after blocking 0.0075996s
+2015-09-03 19:37:16.3624|INFO|thread:30|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 126:GitClient.cs:287 after waiting 0.0007051s
+2015-09-03 19:37:16.3624|INFO|thread:30|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:37:16.3624|INFO|thread:30|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:37:16.3624|INFO|thread:30|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\Gudo\Documents\Visual Studio 2015\curl\
+2015-09-03 19:37:16.4772|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 127:BranchSynchronizer.cs:126 after waiting 0.1089489s
+2015-09-03 19:37:16.4812|INFO|thread:13|AsyncReaderWriterLock|Released concurrent scheduler for operation: 124:GitClient.cs:198 after blocking 0.138411s
+2015-09-03 19:37:16.4812|INFO|thread:40|ConcurrentRepositoryConnection|branch stats: ahead 0, behind 0 on master
+2015-09-03 19:37:16.4812|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 127:BranchSynchronizer.cs:126 after blocking 0.0074154s
+2015-09-03 19:37:16.5332|INFO|thread:13|ConcurrentRepositoryConnection|Took 154ms to git status
+2015-09-03 19:37:16.5332|INFO|thread:13|ConcurrentRepositoryConnection|Took 155ms to git status and parse output
+2015-09-03 19:37:16.5332|INFO|thread:13|NewCommitViewModel|Took 165ms to load files for C:\Users\Gudo\Documents\Visual Studio 2015\curl
+2015-09-03 19:37:16.5332|INFO|thread:13|AsyncReaderWriterLock|Released concurrent scheduler for operation: 126:GitClient.cs:287 after blocking 0.1647778s
+2015-09-03 19:37:16.6212|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 128:BranchSynchronizer.cs:126
+2015-09-03 19:37:16.6212|INFO|thread:30|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 128:BranchSynchronizer.cs:126 after waiting 3.07E-05s
+2015-09-03 19:37:16.6212|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 129:GitClient.cs:636
+2015-09-03 19:37:16.6212|INFO|thread:13|ConcurrentRepositoryConnection|branch stats: ahead 0, behind 0 on master
+2015-09-03 19:37:16.6212|INFO|thread:13|AsyncReaderWriterLock|Released concurrent scheduler for operation: 128:BranchSynchronizer.cs:126 after blocking 0.0071933s
+2015-09-03 19:37:16.6212|INFO|thread:30|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 129:GitClient.cs:636 after waiting 0.0052288s
+2015-09-03 19:37:16.6212|INFO|thread:13|AsyncReaderWriterLock|Released concurrent scheduler for operation: 129:GitClient.cs:636 after blocking 0.003449s
+2015-09-03 19:37:16.8333|INFO|thread: 1|NewCommitViewModel|Took 297ms to render file list for C:\Users\Gudo\Documents\Visual Studio 2015\curl
+2015-09-03 19:37:16.8333|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 130:RepositoryViewModel.cs:321
+2015-09-03 19:37:16.8333|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 130:RepositoryViewModel.cs:321 after waiting 2.83E-05s
+2015-09-03 19:37:17.6451|INFO|thread:30|AsyncReaderWriterLock|Released concurrent scheduler for operation: 130:RepositoryViewModel.cs:321 after blocking 0.8021782s
+2015-09-03 19:37:18.4312|INFO|thread:16|DashboardViewModel|Selected repository '/Tutorial'
+2015-09-03 19:37:18.4352|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 131:GitClient.cs:653
+2015-09-03 19:37:18.4352|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 131:GitClient.cs:653 after waiting 7.12E-05s
+2015-09-03 19:37:18.4352|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 132:GitClient.cs:631
+2015-09-03 19:37:18.4352|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 132:GitClient.cs:631 after waiting 0.0003272s
+2015-09-03 19:37:18.4352|WARN|thread:30|RepositoryModel|Failed creating concurrent connection for c:\Users\Josh Vera\GitHub\Windows\GitHub\Helpers\GitClient.cs:653 as the repository was not found.
+LibGit2Sharp.RepositoryNotFoundException: Path 'C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_db41ce21-83cb-478d-8b62-c941aa25f0e3\new-repo\.git' doesn't point at a valid Git repository or workdir.
+   at LibGit2Sharp.Core.Proxy.git_repository_open(String path)
+   at LibGit2Sharp.Repository..ctor(String path, RepositoryOptions options)
+   at GitHub.Models.RepositoryModel.<CreateConcurrentConnection>b__73[T]()
+   at System.Reactive.Linq.ObservableImpl.Defer`1.Eval()
+   at System.Reactive.Linq.ObservableImpl.Defer`1._.Run()
+2015-09-03 19:37:18.4352|WARN|thread:13|RepositoryModel|Failed creating concurrent connection for c:\Users\Josh Vera\GitHub\Windows\GitHub\Helpers\GitClient.cs:631 as the repository was not found.
+LibGit2Sharp.RepositoryNotFoundException: Path 'C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_db41ce21-83cb-478d-8b62-c941aa25f0e3\new-repo\.git' doesn't point at a valid Git repository or workdir.
+   at LibGit2Sharp.Core.Proxy.git_repository_open(String path)
+   at LibGit2Sharp.Repository..ctor(String path, RepositoryOptions options)
+   at GitHub.Models.RepositoryModel.<CreateConcurrentConnection>b__73[T]()
+   at System.Reactive.Linq.ObservableImpl.Defer`1.Eval()
+   at System.Reactive.Linq.ObservableImpl.Defer`1._.Run()
+2015-09-03 19:37:18.4672|WARN|thread:30|RepositoryModel|Failed creating concurrent connection for c:\Users\Josh Vera\GitHub\Windows\GitHub\Helpers\GitClient.cs:653
+GitHub.MissingRepositoryException: Path 'C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_db41ce21-83cb-478d-8b62-c941aa25f0e3\new-repo\.git' doesn't point at a valid Git repository or workdir.
+2015-09-03 19:37:18.4672|WARN|thread:13|RepositoryModel|Failed creating concurrent connection for c:\Users\Josh Vera\GitHub\Windows\GitHub\Helpers\GitClient.cs:631
+GitHub.MissingRepositoryException: Path 'C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_db41ce21-83cb-478d-8b62-c941aa25f0e3\new-repo\.git' doesn't point at a valid Git repository or workdir.
+2015-09-03 19:37:18.4672|INFO|thread:30|AsyncReaderWriterLock|Released concurrent scheduler for operation: 131:GitClient.cs:653 after blocking 0.0321721s
+2015-09-03 19:37:18.4672|ERROR|thread:13|DashboardViewModel|Could not fixup bad proxy setting.
+GitHub.MissingRepositoryException: Path 'C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_db41ce21-83cb-478d-8b62-c941aa25f0e3\new-repo\.git' doesn't point at a valid Git repository or workdir.
+2015-09-03 19:37:18.5152|INFO|thread:13|AsyncReaderWriterLock|Released concurrent scheduler for operation: 132:GitClient.cs:631 after blocking 0.0779099s
+2015-09-03 19:37:18.8232|INFO|thread:13|DashboardViewModel|Took 390ms to Create RepositoryViewModel for location C:\Users\Gudo\AppData\Local\GitHub\TutorialRepository_db41ce21-83cb-478d-8b62-c941aa25f0e3\new-repo
+2015-09-03 19:37:18.8512|WARN|thread:30|DashboardViewModel|Repository 'Tutorial' us missing from disk - throwing a user error.
+2015-09-03 19:37:20.8440|INFO|thread:16|DashboardViewModel|Selected repository 'jmiguel2902/curl'
+2015-09-03 19:37:20.8440|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 133:GitClient.cs:198
+2015-09-03 19:37:20.8440|INFO|thread:38|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 133:GitClient.cs:198 after waiting 2.35E-05s
+2015-09-03 19:37:20.8596|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 134:RepositoryModel.cs:596
+2015-09-03 19:37:20.8820|INFO|thread:37|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 134:RepositoryModel.cs:596 after waiting 0.0230831s
+2015-09-03 19:37:20.8900|INFO|thread:13|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 135:GitClient.cs:287
+2015-09-03 19:37:20.8900|INFO|thread:13|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 136:BranchSynchronizer.cs:126
+2015-09-03 19:37:20.8900|INFO|thread:37|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 135:GitClient.cs:287 after waiting 0.0004974s
+2015-09-03 19:37:20.8900|INFO|thread:13|AsyncReaderWriterLock|Released concurrent scheduler for operation: 134:RepositoryModel.cs:596 after blocking 0.0081351s
+2015-09-03 19:37:20.8900|INFO|thread:13|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:37:20.8900|INFO|thread:13|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:37:20.8900|INFO|thread:13|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\Gudo\Documents\Visual Studio 2015\curl\
+2015-09-03 19:37:20.9820|INFO|thread:38|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 136:BranchSynchronizer.cs:126 after waiting 0.0907117s
+2015-09-03 19:37:20.9820|INFO|thread:38|ConcurrentRepositoryConnection|branch stats: ahead 0, behind 0 on master
+2015-09-03 19:37:20.9820|INFO|thread:38|AsyncReaderWriterLock|Released concurrent scheduler for operation: 136:BranchSynchronizer.cs:126 after blocking 0.0071347s
+2015-09-03 19:37:20.9820|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 133:GitClient.cs:198 after blocking 0.1306598s
+2015-09-03 19:37:21.0781|INFO|thread:13|ConcurrentRepositoryConnection|Took 181ms to git status
+2015-09-03 19:37:21.0781|INFO|thread:13|ConcurrentRepositoryConnection|Took 181ms to git status and parse output
+2015-09-03 19:37:21.0781|INFO|thread:13|NewCommitViewModel|Took 192ms to load files for C:\Users\Gudo\Documents\Visual Studio 2015\curl
+2015-09-03 19:37:21.0781|INFO|thread:13|AsyncReaderWriterLock|Released concurrent scheduler for operation: 135:GitClient.cs:287 after blocking 0.1918081s
+2015-09-03 19:37:21.0781|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 137:BranchSynchronizer.cs:126
+2015-09-03 19:37:21.0781|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 137:BranchSynchronizer.cs:126 after waiting 2.95E-05s
+2015-09-03 19:37:21.0900|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 138:GitClient.cs:636
+2015-09-03 19:37:21.0900|INFO|thread:20|ConcurrentRepositoryConnection|branch stats: ahead 0, behind 0 on master
+2015-09-03 19:37:21.0900|INFO|thread:20|AsyncReaderWriterLock|Released concurrent scheduler for operation: 137:BranchSynchronizer.cs:126 after blocking 0.0071794s
+2015-09-03 19:37:21.0900|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 138:GitClient.cs:636 after waiting 0.0053936s
+2015-09-03 19:37:21.0900|INFO|thread:20|AsyncReaderWriterLock|Released concurrent scheduler for operation: 138:GitClient.cs:636 after blocking 0.0034297s
+2015-09-03 19:37:21.2757|INFO|thread: 1|NewCommitViewModel|Took 192ms to render file list for C:\Users\Gudo\Documents\Visual Studio 2015\curl
+2015-09-03 19:37:21.2777|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 139:RepositoryViewModel.cs:321
+2015-09-03 19:37:21.2777|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 139:RepositoryViewModel.cs:321 after waiting 2.83E-05s
+2015-09-03 19:37:22.1306|INFO|thread:45|AsyncReaderWriterLock|Released concurrent scheduler for operation: 139:RepositoryViewModel.cs:321 after blocking 0.8556562s
+2015-09-03 19:37:23.8830|INFO|thread:16|DashboardViewModel|Selected repository 'jmiguel2902/Desktop'
+2015-09-03 19:37:23.9050|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 140:GitClient.cs:198
+2015-09-03 19:37:23.9050|INFO|thread:41|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 140:GitClient.cs:198 after waiting 4.1E-05s
+2015-09-03 19:37:23.9050|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 141:RepositoryModel.cs:596
+2015-09-03 19:37:23.9360|INFO|thread:38|AsyncReaderWriterLock|Released concurrent scheduler for operation: 140:GitClient.cs:198 after blocking 0.0312961s
+2015-09-03 19:37:23.9360|INFO|thread:38|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 141:RepositoryModel.cs:596 after waiting 0.030585s
+2015-09-03 19:37:23.9360|INFO|thread:30|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 142:GitClient.cs:287
+2015-09-03 19:37:23.9360|INFO|thread:30|AsyncReaderWriterLock|Released concurrent scheduler for operation: 141:RepositoryModel.cs:596 after blocking 0.0076533s
+2015-09-03 19:37:23.9360|INFO|thread:41|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 142:GitClient.cs:287 after waiting 0.0005958s
+2015-09-03 19:37:23.9500|INFO|thread:41|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:37:23.9500|INFO|thread:41|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:37:23.9500|INFO|thread:41|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\Gudo\Desktop\
+2015-09-03 19:37:24.0201|INFO|thread:38|ConcurrentRepositoryConnection|Took 67ms to git status
+2015-09-03 19:37:24.0201|INFO|thread:38|ConcurrentRepositoryConnection|Took 68ms to git status and parse output
+2015-09-03 19:37:24.0381|INFO|thread:38|NewCommitViewModel|Took 94ms to load files for C:\Users\Gudo\Desktop
+2015-09-03 19:37:24.0381|INFO|thread:38|AsyncReaderWriterLock|Released concurrent scheduler for operation: 142:GitClient.cs:287 after blocking 0.0938686s
+2015-09-03 19:37:24.0481|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 143:BranchSynchronizer.cs:126
+2015-09-03 19:37:24.0481|INFO|thread:37|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 143:BranchSynchronizer.cs:126 after waiting 3.26E-05s
+2015-09-03 19:37:24.0481|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 144:GitClient.cs:636
+2015-09-03 19:37:24.0481|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 144:GitClient.cs:636 after waiting 0.0038161s
+2015-09-03 19:37:24.0481|INFO|thread:13|ConcurrentRepositoryConnection|branch stats: ahead 0, behind 0 on master
+2015-09-03 19:37:24.0481|INFO|thread:13|AsyncReaderWriterLock|Released concurrent scheduler for operation: 143:BranchSynchronizer.cs:126 after blocking 0.0062756s
+2015-09-03 19:37:24.0581|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 144:GitClient.cs:636 after blocking 0.0034979s
+2015-09-03 19:37:24.2823|INFO|thread:13|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 145:GitClient.cs:442
+2015-09-03 19:37:24.2823|INFO|thread:13|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 145:GitClient.cs:442 after waiting 9.9E-05s
+2015-09-03 19:37:24.3013|INFO|thread:13|AsyncReaderWriterLock|Released concurrent scheduler for operation: 145:GitClient.cs:442 after blocking 0.0193449s
+2015-09-03 19:37:24.3663|INFO|thread: 1|NewCommitViewModel|Took 328ms to render file list for C:\Users\Gudo\Desktop
+2015-09-03 19:37:24.3663|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 146:RepositoryViewModel.cs:321
+2015-09-03 19:37:24.3663|INFO|thread:20|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 146:RepositoryViewModel.cs:321 after waiting 3.32E-05s
+2015-09-03 19:37:24.3803|INFO|thread:14|AsyncReaderWriterLock|Released concurrent scheduler for operation: 146:RepositoryViewModel.cs:321 after blocking 0.0136223s
+2015-09-03 19:37:28.3571|WARN|thread:35|BackgroundFetcher|ApiClient.GetFetchInterval raised an exception
+System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'api.github.com'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Octokit.Internal.HttpClientAdapter.<Send>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Octokit.Connection.<RunRequest>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Octokit.Connection.<Run>d__23`1.MoveNext()
+2015-09-03 19:37:28.3571|INFO|thread:35|BackgroundFetcher|Added a delay for C:\Users\Gudo\Desktop\.git of 18463 milliseconds
+2015-09-03 19:37:28.3571|WARN|thread:35|PullRequestViewModel|Error refreshing pull requests from server
+System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.30.252.126:443
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Octokit.Internal.HttpClientAdapter.<Send>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Octokit.Connection.<RunRequest>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Octokit.Connection.<Run>d__23`1.MoveNext()
+2015-09-03 19:37:28.4052|INFO|thread: 1|NewPullRequestViewModel|No matching pull request found, clearing selection...
+2015-09-03 19:37:28.4052|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 147:RepositoryViewModel.cs:321
+2015-09-03 19:37:28.4052|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 147:RepositoryViewModel.cs:321 after waiting 0.0008983s
+2015-09-03 19:37:28.4572|INFO|thread:35|AsyncReaderWriterLock|Released concurrent scheduler for operation: 147:RepositoryViewModel.cs:321 after blocking 0.0499003s
+2015-09-03 19:37:32.1357|INFO|thread:41|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 148:GitClient.cs:210
+2015-09-03 19:37:32.1357|INFO|thread:45|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 148:GitClient.cs:210 after waiting 0.0006139s
+2015-09-03 19:37:32.1357|INFO|thread:41|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 149:GitClient.cs:133
+2015-09-03 19:37:32.1357|INFO|thread:41|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 149:GitClient.cs:133 after waiting 0.0001382s
+2015-09-03 19:37:32.1357|INFO|thread:41|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:37:32.1357|INFO|thread:41|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:37:32.1357|INFO|thread:41|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'log -g --abbrev-commit --pretty=oneline HEAD -n 2500 ', Working Directory: C:\Users\Gudo\Desktop\
+2015-09-03 19:37:32.1527|INFO|thread:37|AsyncReaderWriterLock|Released concurrent scheduler for operation: 148:GitClient.cs:210 after blocking 0.0161205s
+2015-09-03 19:37:32.1968|INFO|thread:33|AsyncReaderWriterLock|Released concurrent scheduler for operation: 149:GitClient.cs:133 after blocking 0.0600796s
+2015-09-03 19:37:33.6112|INFO|thread:35|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 150:GitClient.cs:210
+2015-09-03 19:37:33.6112|INFO|thread:35|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation: 151:GitClient.cs:133
+2015-09-03 19:37:33.6112|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 150:GitClient.cs:210 after waiting 0.0003103s
+2015-09-03 19:37:33.6112|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 151:GitClient.cs:133 after waiting 0.0001714s
+2015-09-03 19:37:33.6402|INFO|thread: 4|AsyncReaderWriterLock|Released concurrent scheduler for operation: 150:GitClient.cs:210 after blocking 0.0282039s
+2015-09-03 19:37:33.6402|INFO|thread:36|GitEnvironment|Process set up with this SSH Agent info: 836:/tmp/ssh-maWf8KCpbprF/agent.3516
+2015-09-03 19:37:33.6402|INFO|thread:36|GitEnvironment|PATH is C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Gudo\AppData\Local\Apps\2.0\6YCKPLNC.0BV\0N36QHCL.KGB\gith..tion_317444273a93ac29_0003.0000_3d9282105f72a5d4;C:\Users\Gudo\AppData\Local\GitHub\lfs-amd64_0.5.4;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-09-03 19:37:33.6402|INFO|thread:36|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Gudo\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'log -g --abbrev-commit --pretty=oneline HEAD -n 2500 ', Working Directory: C:\Users\Gudo\Desktop\
+2015-09-03 19:37:33.6773|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 151:GitClient.cs:133 after blocking 0.0651225s
